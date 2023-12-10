@@ -3,7 +3,6 @@ import sqlite3
 
 app = Bottle()
 
-# Connect to SQLite database
 conn = sqlite3.connect('mobile_company.db')
 cursor = conn.cursor()
 

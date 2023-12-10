@@ -12,8 +12,8 @@
  <h1>Mobiles and Companies</h1>
  <table border="1">
  <tr>
- <th>ID</th>
- <th>Title</th>
+ <th>S.NO</th>
+ <th>Model</th>
  <th>Release Year</th>
  <th>Company</th>
  <th>Edit</th>

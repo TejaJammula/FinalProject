@@ -3,11 +3,9 @@ import sqlite3
 conn = sqlite3.connect('mobile_company.db')
 cursor = conn.cursor()
 
-# Drop tables if they already exist
 cursor.execute('DROP TABLE IF EXISTS mobiles')
 cursor.execute('DROP TABLE IF EXISTS companies')
 
-# Create tables
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS companies (
  id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -25,7 +23,6 @@ CREATE TABLE IF NOT EXISTS mobiles (
 )
 ''')
 
-# Sample data for testing
 cursor.execute("INSERT INTO companies (name) VALUES ('Samsung')")
 cursor.execute("INSERT INTO companies (name) VALUES ('Apple')")
 cursor.execute("INSERT INTO companies (name) VALUES ('Nexon')")
